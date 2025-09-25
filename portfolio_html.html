@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Longoria - Portfolio</title>
+    <link rel="stylesheet" href="portfolio_css.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Portfolio</a></li>
+            <li class="nav-item hideOnMobile"><a href="#home">Home</a></li>
+            <li class="nav-item hideOnMobile"><a href="#skills">Skills</a></li>
+            <li class="nav-item hideOnMobile"><a href="#education">Education</a></li>
+            <li class="nav-item hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="nav-item hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span>Navigation</span>
+            <button class="close-btn" onclick="hideSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </button>
+        </div> 
+        <ul class="sidebar-nav">
+            <li><a href="#home" onclick="hideSidebar()">Home</a></li>
+            <li><a href="#skills" onclick="hideSidebar()">Skills</a></li>
+            <li><a href="#education" onclick="hideSidebar()">Education</a></li>
+            <li><a href="#projects" onclick="hideSidebar()">Projects</a></li>
+            <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="hideSidebar()"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-pic">
+                <img src="IMG_1894.png" alt="Joshua Longoria">
+            </div>
+            <h1>Joshua Longoria</h1>
+            <p>Software Engineer • Cybersecurity • CS Major</p>
+            <div class="social-links">
+                <button class="social-btn" onclick="window.open('https://www.instagram.com/hippojosh_?igsh=bDFscm02NDI4ZW1u&utm_source=qr')">
+                     <img src="Black-Instagram-Logo-Transparent.png" alt="Instagram" class="social-icon">
+                </button>
+                <button class="social-btn" onclick="window.open('https://www.linkedin.com/in/joshua-longoria-221885163')">
+                    <img src="10-2-linkedin-png-clipart.png" alt="LinkedIn" class="social-icon">
+                </button>
+                <button class="social-btn" onclick="window.open('https://github.com/JoshuaLongoria')">
+                    <img src="github-icon-1-logo-black-and-white.png" alt="GitHub" class="social-icon">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon html">HTML</div>
+                <h3>HTML5</h3>
+                <p>My knowledge encompasses the use of headings, paragraphs, links, images, lists, forms, tables, and semantic elements, enabling me to build well-organized and accessible websites.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon css">CSS</div>
+                <h3>CSS3</h3>
+                <p>My expertise includes the ability to manipulate colors, fonts, spacing, and positioning, as well as to implement responsive design techniques using media queries. I am proficient in utilizing CSS selectors, pseudo-classes, pseudo-elements, and the box model.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon cpp">C++</div>
+                <h3>C++</h3>
+                <p>My knowledge includes the core concepts of C++ such as variables, data types, control structures, functions, and arrays. Additionally, I am proficient in more advanced topics such as object-oriented programming (OOP), including classes, inheritance, polymorphism, and encapsulation.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon js">JS</div>
+                <h3>JavaScript</h3>
+                <p>My knowledge encompasses the fundamental concepts of JavaScript such as variables, data types, operators, control structures, functions, and events. Additionally, I am skilled in advanced topics like asynchronous programming with callbacks, promises, and async/await.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+            <h3>Associate Degree in Computer Science</h3>
+            <p><strong>Austin Community College</strong></p>
+            <p>I earned an Associate Degree in Computer Science at Austin Community College, which involved comprehensive coursework in programming, data structures, algorithms, and computer systems. During my studies, I gained hands-on experience with various programming languages, software development methodologies, and network technologies, providing me with a strong foundation for a career in technology and software development.</p>
+        </div>
+        <div class="card">
+            <h3>Certificate in Cybersecurity Basics</h3>
+            <p><strong>Google</strong></p>
+            <p>This experience provided a strong entry-level foundation in security operations and defense, focusing on the core principles and practical tools used by cybersecurity analysts.</p>
+        </div>
+        <div class="card">
+            <h3>Certificate in AWS Cloud</h3>
+            <p><strong>Amazon Web Services</strong></p>
+            <p>This is the foundational, entry-level certification from Amazon Web Services. It is ideal for individuals from both technical and non-technical backgrounds who need to demonstrate a high-level, overall understanding of the AWS Cloud.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>QR Scanner</h3>
+                <p>Interactive QR code scanning application with real-time processing capabilities and user-friendly interface.</p>
+            </div>
+            <div class="project-card">
+                <h3>Chess Game</h3>
+                <p>Full-featured chess game implementation with game logic, move validation, and interactive gameplay.</p>
+            </div>
+            <div class="project-card">
+                <h3>Login Website</h3>
+                <p>Secure authentication system with user management, session handling, and responsive design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>Get in touch via email for opportunities and collaborations</p>
+                <p>Joshualongoria25@gmail.com</p>
+            </div>
+            <div class="contact-item" onclick="window.open('https://www.linkedin.com/in/joshua-longoria-221885163')">
+                <h3>LinkedIn</h3>
+                <p>Connect with me professionally on LinkedIn</p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p>Call for direct communication and opportunities</p>
+                <p>Mobile: (512)-878-7557</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="portfolio_js.js"></script>
+</body>
+</html>
