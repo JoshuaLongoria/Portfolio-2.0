@@ -351,6 +351,9 @@ section.visible {
     background: linear-gradient(45deg, #f7df1e, #f0db4f); 
     color: #333;
 }
+.skill-icon.sql {
+    background: linear-gradient(45deg, #0f70bb, #004482); 
+}
 
 .skill-card h3 {
     color: white;
