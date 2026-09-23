@@ -9,13 +9,20 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             
-            // Animate skill cards with stagger
+            // Animate language skill cards with stagger
             if (entry.target.id === 'skills') {
-                const cards = entry.target.querySelectorAll('.skill-card');
+                const cards = entry.target.querySelectorAll('.skills-grid .skill-card');
                 cards.forEach((card, index) => {
                     setTimeout(() => {
                         card.classList.add('visible');
                     }, index * 200);
+                });
+            }
+
+            // Reveal tool cards all at once
+            if (entry.target.classList.contains('tools-grid')) {
+                entry.target.querySelectorAll('.skill-card').forEach(card => {
+                    card.classList.add('visible');
                 });
             }
         }
@@ -30,6 +37,11 @@ document.querySelectorAll('section').forEach(section => {
 // Observe cards
 document.querySelectorAll('.card').forEach(card => {
     observer.observe(card);
+});
+
+// Observe tools grid
+document.querySelectorAll('.tools-grid').forEach(grid => {
+    observer.observe(grid);
 });
 
 // Scroll progress bar
@@ -83,13 +95,13 @@ function hideSidebar() {
     body.style.overflow = ''; // Restore scrolling
 }
 
-// Add click handlers for project cards (optional)
+// Open a project's data-link on click ("#" is the placeholder until a URL is set)
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('click', function() {
-        // You can add specific project links here
-        const title = this.querySelector('h3').textContent;
-        console.log(`Clicked on project: ${title}`);
-        // Example: window.open('project-url-here', '_blank');
+        const link = this.dataset.link;
+        if (link && link !== '#') {
+            window.open(link, '_blank', 'noopener');
+        }
     });
 });
 

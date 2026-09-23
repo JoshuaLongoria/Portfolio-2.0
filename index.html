@@ -17,6 +17,7 @@
             <li class="nav-item hideOnMobile"><a href="#home">Home</a></li>
             <li class="nav-item hideOnMobile"><a href="#skills">Skills</a></li>
             <li class="nav-item hideOnMobile"><a href="#education">Education</a></li>
+            <li class="nav-item hideOnMobile"><a href="#research">Research</a></li>
             <li class="nav-item hideOnMobile"><a href="#projects">Projects</a></li>
             <li class="nav-item hideOnMobile"><a href="#contact">Contact</a></li>
             <li class="menu-button" onclick="showSidebar()">
@@ -38,11 +39,12 @@
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
                 </svg>
             </button>
-        </div> 
+        </div>
         <ul class="sidebar-nav">
             <li><a href="#home" onclick="hideSidebar()">Home</a></li>
             <li><a href="#skills" onclick="hideSidebar()">Skills</a></li>
             <li><a href="#education" onclick="hideSidebar()">Education</a></li>
+            <li><a href="#research" onclick="hideSidebar()">Research</a></li>
             <li><a href="#projects" onclick="hideSidebar()">Projects</a></li>
             <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
         </ul>
@@ -53,22 +55,24 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
+        <div class="hero-inner">
             <div class="profile-pic">
                 <img src="IMG_3484.jpeg" alt="Joshua Longoria">
             </div>
-            <h1>Joshua Longoria</h1>
-            <p>Secuirty Engineer • Cybersecurity • CS Major</p>
-            <div class="social-links">
-                <button class="social-btn" onclick="window.open('https://www.instagram.com/hippojosh_?igsh=bDFscm02NDI4ZW1u&utm_source=qr')">
-                     <img src="Black-Instagram-Logo-Transparent.png" alt="Instagram" class="social-icon">
-                </button>
-                <button class="social-btn" onclick="window.open('https://www.linkedin.com/in/joshua-longoria-221885163')">
-                    <img src="10-2-linkedin-png-clipart.png" alt="LinkedIn" class="social-icon">
-                </button>
-                <button class="social-btn" onclick="window.open('https://github.com/JoshuaLongoria')">
-                    <img src="github-icon-1-logo-black-and-white.png" alt="GitHub" class="social-icon">
-                </button>
+            <div class="hero-text">
+                <h1>Joshua Longoria</h1>
+                <p>Security Engineer • Cybersecurity • CS Major</p>
+                <div class="social-links">
+                    <button class="social-btn" onclick="window.open('https://www.instagram.com/hippojosh_?igsh=bDFscm02NDI4ZW1u&utm_source=qr')">
+                         <img src="Black-Instagram-Logo-Transparent.png" alt="Instagram" class="social-icon">
+                    </button>
+                    <button class="social-btn" onclick="window.open('https://www.linkedin.com/in/joshua-longoria-221885163')">
+                        <img src="10-2-linkedin-png-clipart.png" alt="LinkedIn" class="social-icon">
+                    </button>
+                    <button class="social-btn" onclick="window.open('https://github.com/JoshuaLongoria')">
+                        <img src="github-icon-1-logo-black-and-white.png" alt="GitHub" class="social-icon">
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -78,14 +82,12 @@
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <div class="skill-icon html">HTML</div>
-                <h3>HTML5</h3>
-                <p>My knowledge encompasses the use of headings, paragraphs, links, images, lists, forms, tables, and semantic elements, enabling me to build well-organized and accessible websites.</p>
+                <div class="skill-icon python">Py</div>
+                <h3>Python</h3>
             </div>
             <div class="skill-card">
-                <div class="skill-icon css">CSS</div>
-                <h3>CSS3</h3>
-                <p>My expertise includes the ability to manipulate colors, fonts, spacing, and positioning, as well as to implement responsive design techniques using media queries. I am proficient in utilizing CSS selectors, pseudo-classes, pseudo-elements, and the box model.</p>
+                <div class="skill-icon java">Java</div>
+                <h3>Java</h3>
             </div>
             <div class="skill-card">
                 <div class="skill-icon cpp">C++</div>
@@ -93,15 +95,32 @@
                 <p>My knowledge includes the core concepts of C++ such as variables, data types, control structures, functions, and arrays. Additionally, I am proficient in more advanced topics such as object-oriented programming (OOP), including classes, inheritance, polymorphism, and encapsulation.</p>
             </div>
             <div class="skill-card">
-                <div class="skill-icon js">JS</div>
-                <h3>JavaScript</h3>
-                <p>My knowledge encompasses the fundamental concepts of JavaScript such as variables, data types, operators, control structures, functions, and events. Additionally, I am skilled in advanced topics like asynchronous programming with callbacks, promises, and async/await.</p>
-            </div>
-            <div class="skill-card">
                 <div class="skill-icon sql">SQL</div>
                 <h3>SQL</h3>
                 <p>My knowlegde with SQL stems from mySQL stemming from projects that have game me real world application experience</p>
             </div>
+            <div class="skill-card">
+                <div class="skill-icon kql">KQL</div>
+                <h3>KQL</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon js">JS</div>
+                <h3>JavaScript / Node.js</h3>
+                <p>My knowledge encompasses the fundamental concepts of JavaScript such as variables, data types, operators, control structures, functions, and events. Additionally, I am skilled in advanced topics like asynchronous programming with callbacks, promises, and async/await.</p>
+            </div>
+        </div>
+
+        <h3 class="subsection-title">Security &amp; Cloud Tools</h3>
+        <div class="tools-grid">
+            <div class="skill-card tool"><h3>Microsoft Sentinel</h3></div>
+            <div class="skill-card tool"><h3>Wireshark</h3></div>
+            <div class="skill-card tool"><h3>Metasploit</h3></div>
+            <div class="skill-card tool"><h3>Kali Linux</h3></div>
+            <div class="skill-card tool"><h3>Active Directory</h3></div>
+            <div class="skill-card tool"><h3>Azure</h3></div>
+            <div class="skill-card tool"><h3>AWS</h3></div>
+            <div class="skill-card tool"><h3>Docker</h3></div>
+            <div class="skill-card tool"><h3>VMware</h3></div>
         </div>
     </section>
 
@@ -109,9 +128,10 @@
     <section id="education">
         <h2 class="section-title">Education</h2>
         <div class="card">
-            <h3>Bacholor Degree in Computer Science</h3>
+            <h3>B.S. Computer Science, Cybersecurity Concentration, Minor in Mathematics</h3>
             <p><strong>Texas Tech University</strong></p>
-            <p>Pursing a Bacholors Degree, My graduation date: Spring 2027, Current GPA: 3.6</p>
+            <p>Expected graduation: May 2027 • GPA: 3.828/4.0</p>
+            <p>Honors: President's List (Spring 2026), Dean's List (Fall 2025), W. Phillips IMPACT Transfer Scholarship, HSF Scholar</p>
         </div>
         <div class="card">
             <h3>Associate Degree in Computer Science</h3>
@@ -128,23 +148,61 @@
             <p><strong>Amazon Web Services</strong></p>
             <p>This is the foundational, entry-level certification from Amazon Web Services. It is ideal for individuals from both technical and non-technical backgrounds who need to demonstrate a high-level, overall understanding of the AWS Cloud.</p>
         </div>
+        <div class="card">
+            <h3>Azure Fundamentals (AZ-900)</h3>
+            <p><strong>Microsoft</strong></p>
+        </div>
+        <div class="card">
+            <h3>Cybersecurity Basics</h3>
+            <p><strong>LetsDefend</strong></p>
+        </div>
+
+        <h3 class="subsection-title">Leadership &amp; Activities</h3>
+        <div class="card">
+            <h3>Phi Sigma Pi National Honor Fraternity</h3>
+            <p>2025 – Present</p>
+        </div>
+        <div class="card">
+            <h3>Instructor, Knight Raiders Chess Club</h3>
+            <p>2025 – Present</p>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+        <h2 class="section-title">Research</h2>
+        <div class="card">
+            <h3>Undergraduate Researcher, NSF REU — Cyber-Aerial Computing</h3>
+            <p><strong>Wireless Mobile Networking Lab, Texas Tech University</strong></p>
+            <p>Aug 2026 – Present • Advisor: Dr. Sunho Lim</p>
+            <p>Investigating privacy threats from malicious UAVs and defenses using cooperative drones. Building a Crazyflie 2.x / Crazyradio micro-drone testbed for flight and radio experiments.</p>
+        </div>
+        <div class="card">
+            <h3>NSF REU Fellow — Blockchain &amp; Decentralized Systems</h3>
+            <p><strong>Boise State University</strong></p>
+            <p>May – Jul 2026 • Mentors: Dr. Gaby G. Dagher and Dr. Jun Zhuang</p>
+            <p>Researched MCP server security in educational settings. Built MCP-Trust, a proxy that screens MCP servers before an agent connects, using a two-pass pipeline and a weighted six-model LLM consensus panel to flag tool poisoning, prompt injection and rug pulls. Co-authored a paper under submission to AsiaCCS.</p>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
-                <h3>VMWare virtual homelab</h3>
-                <p>Made a virtual sandbox using Kali linux that runs Active Directory, DNS, and workstation. Used to practice pen-testing techniques in a safe controlled environment</p>
+            <div class="project-card" data-link="#">
+                <h3>SIEM Implementation and Log Analysis</h3>
+                <p class="project-tech">Microsoft Sentinel • Azure • KQL</p>
+                <p>Deployed Microsoft Sentinel on Azure with an internet-facing honeypot VM. Built a DCR pipeline with KQL transforms that normalize failed logons into a custom Failed_Logins_CL table, and a Workbook dashboard mapping attacker geolocation over time.</p>
             </div>
-            <div class="project-card">
-                <h3>Developded MVP for "Shop-Mate"</h3>
-                <p>Built a server using React capable of iterpreting and responding to GET and HEAD request, along with the Google Cloud using mySQL for the database</p>
+            <div class="project-card" data-link="#">
+                <h3>Virtualized Security Home Lab</h3>
+                <p class="project-tech">VMware • Kali Linux • Windows Server • Tailscale</p>
+                <p>Windows Server domain controller with AD/DNS, a domain-joined workstation, a Metasploitable2 target and a Kali attack box on an isolated network, with remote SSH across hosts over Tailscale.</p>
             </div>
-            <div class="project-card">
-                <h3>"Lucky Stuidos" - Sign-Up & info page</h3>
-                <p>Secure authentication system with user management, session handling, and responsive design, built using HTML5/CSS3/JavaScript</p>
+            <div class="project-card" data-link="#">
+                <h3>Quantum Chess</h3>
+                <p class="project-tech">Python • Pygame • Qiskit • IBM Quantum</p>
+                <p>Three-person project where I owned UI and visualization: board rendering, ghost pieces for superposed states and a hardware/simulator toggle. Integrated IBM Quantum Runtime and am now the primary maintainer.</p>
             </div>
         </div>
     </section>
@@ -158,14 +216,9 @@
                 <p>Get in touch via email for opportunities and collaborations</p>
                 <p>Joshualongoria25@gmail.com</p>
             </div>
-            <div class="contact-item" onclick="window.open('https://www.linkedin.com/in/joshua-longoria-221885163')">
+            <div class="contact-item" onclick="window.open('https://www.linkedin.com/in/joshua-jcl777/')">
                 <h3>LinkedIn</h3>
                 <p>Connect with me professionally on LinkedIn</p>
-            </div>
-            <div class="contact-item">
-                <h3>Phone</h3>
-                <p>Call for direct communication and opportunities</p>
-                <p>Mobile: (512)-878-7557</p>
             </div>
         </div>
     </section>
